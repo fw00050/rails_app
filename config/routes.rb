@@ -1,4 +1,13 @@
 RailsApp::Application.routes.draw do
+  match '/news', :to => 'pages#news'
+  match '/enquiry',   :to => 'pages#enquiry'
+  match '/submit', :to => 'pages#sumbit'
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/survey',   :to => 'pages#survey'
+
+  root :to => 'pages#home'
+
   get "pages/home"
 
   get "pages/news"
@@ -12,6 +21,10 @@ RailsApp::Application.routes.draw do
   get "pages/about"
 
   get "pages/survey"
+
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  # root :to => "welcome#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
