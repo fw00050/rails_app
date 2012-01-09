@@ -1,0 +1,134 @@
+.container {
+  width: center;
+}
+
+body 
+{
+      background : black ;
+      background-image : url('background2.jpg'); /*背景圖片網址*/
+      background-repeat : no-repeat; /*背景圖片重複排*/
+      background-position : center;
+      background-attachment: fixed; /*背景圖片固定*/
+}
+
+header {
+  padding-top: 10px;
+}
+
+header img {
+  padding: 1em;
+  background: black;
+}
+
+section {
+  margin-top: 1em;
+  font-size: 150%;
+  padding: 20px;
+  background: #fff;
+}
+
+section h1 {
+  font-size: 200%;
+  color: #09c;
+}
+
+section h2 {
+  font-size: 150%;
+}
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+
+/* footer */
+
+footer {
+;
+  margin-top: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+
+/* download button */
+
+a.download_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #006400;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/*- navigation --------------------------- */
+
+
+    nav {
+      background:#F4F4F4;
+      font-size:123%;
+      line-height:normal;
+      border-bottom:2px solid #24618E;
+      white-space: nowrap; 
+
+     }
+
+nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+   nav ul {
+	margin:5px;
+	padding:10px 0px 0 50px;
+	list-style:none;
+      }
+    nav li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+
+nav ul li a {
+  padding: 0 60px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: black;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+

@@ -1,7 +1,10 @@
 RailsApp::Application.routes.draw do
-  match '/news', :to => 'pages#news'
+  resources :articles
+
+  resources :records
+  match '/news', :to => 'news#index'
+  match '/admin', :to => 'admin#index'  
   match '/enquiry',   :to => 'pages#enquiry'
-  match '/submit', :to => 'pages#sumbit'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/survey',   :to => 'pages#survey'
@@ -10,11 +13,7 @@ RailsApp::Application.routes.draw do
 
   get "pages/home"
 
-  get "pages/news"
-
   get "pages/enquiry"
-
-  get "pages/submit"
 
   get "pages/contact"
 
