@@ -2,12 +2,15 @@ RailsApp::Application.routes.draw do
   resources :articles
 
   resources :records
+
+ 
+
   match '/news', :to => 'news#index'
   match '/admin', :to => 'admin#index'  
   match '/enquiry',   :to => 'pages#enquiry'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
-  match '/survey',   :to => 'pages#survey'
+  match '/help',   :to => 'pages#help'
 
   root :to => 'pages#home'
 

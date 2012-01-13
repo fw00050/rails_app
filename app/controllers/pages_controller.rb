@@ -23,8 +23,8 @@ class PagesController < ApplicationController
     @title = "About"
   end
 
-  def survey
-    @title = "Survey"
+  def help
+    @title = "Help"
   end
 
 end

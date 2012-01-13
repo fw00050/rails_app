@@ -81,16 +81,16 @@ it "should have the right title" do
     end
   end
 
-  describe "GET 'survey'" do
+  describe "GET 'help'" do
     it "should be successful" do
-      get 'survey'
+      get 'help'
       response.should be_success
     end
 
 it "should have the right title" do
-      get 'survey'
+      get 'help'
       response.should have_selector("title",
-                        :content => "Surrey Biodiversity Information Centre | Survey")
+                        :content => "Surrey Biodiversity Information Centre | Help")
     end
   end
 

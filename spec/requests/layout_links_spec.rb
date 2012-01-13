@@ -18,7 +18,7 @@ describe "LayoutLinks" do
   end
 
   it "should have a Contact page at '/submit'" do
-    get '/submit'
+    get '/records/new'
     response.should have_selector('title', :content => "Submit")
   end
 
